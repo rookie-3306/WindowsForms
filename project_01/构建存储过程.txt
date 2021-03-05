@@ -1,0 +1,42 @@
+create proc user_number
+as
+begin
+	SELECT count(*) FROM User_Information
+end
+----------------------------------------------
+create proc find_user_by_id
+@UserId varchar(10)
+as
+begin
+	SELECT * FROM User_Information where UserId=@UserId
+end
+----------------------------------------------
+create proc add_user
+@UserId varchar(10),
+@UserName varchar(10),
+@UserPwd varchar(10),
+@DepartmentId char(3)
+as
+begin
+	insert into User_Information(UserId,UserName,UserPwd,DepartmentId)
+	values(@UserId,@UserName,@UserPwd,@DepartmentId)
+end
+----------------------------------------------
+create proc delete_user_by_id
+@UserId varchar(10)
+as
+begin
+	delete from User_Information where UserId=@UserId
+end
+----------------------------------------------
+create proc update_user_information
+@UserId varchar(10),
+@NewUserName varchar(10),
+@NewUserPwd varchar(10),
+@NewDepartmentId char(3)
+as
+begin
+	UPDATE User_Information SET UserName=@NewUserName,UserPwd=@NewUserPwd,DepartmentId=@NewDepartmentId
+	WHERE UserId=@UserId
+end
+----------------------------------------------
