@@ -8,3 +8,4 @@ E:\VS Project\project_01\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csproj.Gene
 E:\VS Project\project_01\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csproj.CoreCompileInputs.cache
 E:\VS Project\project_01\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.exe
 E:\VS Project\project_01\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.pdb
+E:\VS Project\project_01\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.Form2.resources
